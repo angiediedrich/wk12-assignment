@@ -1,8 +1,23 @@
-// Get the modal
-var modal = document.getElementById('applesauceModal');
+var modals = document.getElementsByClassName('modal');
+// Get the button that opens the modal
+var btns = document.getElementsByClassName("openmodal");
+var spans=document.getElementsByClassName("close");
+for(let i=0;i<btns.length;i++){
+   btns[i].onclick = function() {
+      modals[i].style.display = "block";
+   }
+}
+for(let i=0;i<spans.length;i++){
+    spans[i].onclick = function() {
+       modals[i].style.display = "none";
+    }
+ }
+
+/*// Get the modal
+var modal = document.getElementByClassName('modal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("applesauceBtn");
+var btn = document.getElementByClassName("navBtn");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
