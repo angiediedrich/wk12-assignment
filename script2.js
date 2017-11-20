@@ -1,4 +1,10 @@
-var modals = document.getElementsByClassName('modal');
+$(document).ready(function() {
+  $("#applesaucebtn").click (function() {
+    $("#applesauceModal").fadeIn(100);
+  })
+}
+
+/*var modals = document.getElementsByClassName('modal');
 // Get the button that opens the modal
 var btns = document.getElementsByClassName("openmodal");
 var spans=document.getElementsByClassName("close");
@@ -13,7 +19,7 @@ for(let i=0;i<spans.length;i++){
     }
  }
 
-/*// Get the modal
+// Get the modal
 var modal = document.getElementByClassName('modal');
 
 // Get the button that opens the modal
